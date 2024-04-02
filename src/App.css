@@ -1,38 +1,182 @@
-.App {
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #24292e;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section-heading {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-item {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.video-item h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.video-item p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Add additional styling for VideoDetails, Category, and NotFound components as needed */
+
+/* Add additional styling for VideoDetails, Category, and NotFound components as needed */
+
+.video-details {
+  margin-top: 40px;
+}
+
+.video-details .video-player {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #666;
+}
+
+.category-videos {
+  margin-top: 40px;
+}
+
+.category-videos .video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.category-videos .video-item {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.category-videos .video-item h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.category-videos .video-item p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.not-found {
+  margin-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.not-found h2 {
+  font-size: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.not-found p {
+  font-size: 18px;
+  color: #666;
+} 
+
+/* CSS file */
+.video-card {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .video-card {
+    max-width: 400px; /* Adjust for larger screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* App.css */
+/* Add responsive styles here */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .video-section {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .category-buttons button {
+    margin: 5px;
+  }
+  .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
   }
 }
